@@ -1,8 +1,9 @@
 import React from 'react';
 import useChat from '../../hooks/useChat';
 
-const ChatRoom = () => {
-    const { messages, sendMessage } = useChat();
+const ChatRoom = (props) => {
+    const roomName = props.data.roomName;
+    const { messages, sendMessage } = useChat(roomName);
     const [newMessage, setNewMessage] = React.useState("");
 
     const handleNewMessageChange = (event) => {
@@ -16,7 +17,7 @@ const ChatRoom = () => {
 
     return (
         <div className="chat-room-container">
-            <h1 className="room-id">Chat Room ID: </h1>
+            <h1 className="room-id">Room Name: {roomName}</h1>
             <div className="message-container">
                 <ol className="message-list">
                     {messages.map((message, index) => (
