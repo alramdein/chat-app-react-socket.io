@@ -2,7 +2,7 @@
 
 > Status: Still on development process (branch develop)
 
-Chat Web App created with Socket.io and React.js (React Hook). 
+Chat Web App created with Node.js, Socket.io, and React.js (React Hook). 
 
 ## Installation
 On root project, run
