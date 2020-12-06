@@ -1,7 +1,6 @@
 import React from 'react';
 // import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
 
 const Welcome = () => {
     const [roomName, setRoomName] = React.useState("");
@@ -35,4 +34,4 @@ const Welcome = () => {
     )
 }
 
-export default withRouter(Welcome);
+export default Welcome;

@@ -1,8 +1,17 @@
 import React from 'react';
 import useChat from '../../hooks/useChat';
+import { useHistory } from "react-router-dom";
 
 const ChatRoom = (props) => {
+    const history = useHistory();
     const roomName = props.location.data;
+
+    // redirect to welcome page
+    // if roomName is not inserted
+    if(roomName === undefined) {
+        history.push('/');
+    }
+
     const { messages, sendMessage } = useChat(roomName);
     const [newMessage, setNewMessage] = React.useState("");
 
@@ -25,7 +34,6 @@ const ChatRoom = (props) => {
                         key={index}
                         className="message-item"
                         >
-                            {console.log(message.body)}
                             {message.body}
                         </li>
                     ))}

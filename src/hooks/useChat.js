@@ -10,7 +10,11 @@ const useChat = (roomName) => {
 
     useEffect(() => {
         // Create a socket connection
-        socketRef.current = ioClient(SOCKET_SERVER_URL);
+        socketRef.current = ioClient(SOCKET_SERVER_URL, {
+            query: { 
+                roomName: roomName 
+            } 
+        });
 
         // Listen for new message
         socketRef.current.on(NEW_MESSAGE_EVENT, (newMessage) => {
