@@ -2,7 +2,7 @@ import React from 'react';
 import useChat from '../../hooks/useChat';
 
 const ChatRoom = (props) => {
-    const roomName = props.data.roomName;
+    const roomName = props.location.data;
     const { messages, sendMessage } = useChat(roomName);
     const [newMessage, setNewMessage] = React.useState("");
 

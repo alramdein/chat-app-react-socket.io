@@ -1,6 +1,7 @@
 import React from 'react';
 // import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 const Welcome = () => {
     const [roomName, setRoomName] = React.useState("");
@@ -27,11 +28,11 @@ const Welcome = () => {
             {/* <button onClick={handleJoinRoom} className="send-message-button">
                 Join
             </button> */}
-            <Link to={{pathname:'/chat-name', data: roomName}}>
+            <Link to={{pathname:'/chat-room', data: roomName}}>
                 Join
             </Link>
         </div>
     )
 }
 
-export default Welcome;
+export default withRouter(Welcome);
