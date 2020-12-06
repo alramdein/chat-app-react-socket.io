@@ -1,6 +1,6 @@
 # Chat App
 
-> Status: Still on development process
+> Status: Still on development process (branch develop)
 
 Chat Web App created with Socket.io and React.js. 
 
@@ -17,7 +17,7 @@ npm start
 ```
 In different terminal, run socket server with
 ```bash
-node server.js
+npm run server
 ```
 Open `http://localhost:3000/` on your browser. And open it to another browser as much as you like. 
 
