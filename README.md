@@ -23,3 +23,6 @@ Open `http://localhost:3000/` on your browser. And open it to another browser as
 
 Start chatting and ta-da! The chat is broadcasted to all connected client
 
+## Author
+
+Alif Ramdani with reference to Jakub Kozak
