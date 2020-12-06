@@ -21,7 +21,7 @@ npm run server
 ```
 Open `http://localhost:3000/` on your browser. And open it to another browser as much as you like. 
 
-Start chatting and ta-da! The chat is broadcasted to all connected client
+Enter the room name, start chatting, and ta-da! The chat is broadcasted to all connected client in the same room
 
 ## Author
 
